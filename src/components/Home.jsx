@@ -10,11 +10,11 @@ const Home = () => {
       className='w-full h-screen bg-[#0a192f] flex justify-center items-center '
     >
       <div className=' flex flex-col  lg:flex-row w-[90%] h-screen bg-[#0a192f]   '>
-        <div className='w-[70%] mt-20 mx-auto px-8 flex flex-col justify-center h-full  '>
+        <div className='w-[70%] mt-20  mx-auto px-8 flex flex-col justify-center h-full  '>
           <h2 className='text-2xl sm:text-5xl font-semibold text-gray-300'>
             Hello, I'm <span>Sudharsan</span>
           </h2>
-          <h1 className='mt-1 text-3xl sm:text-2xl font-bold text-gray-200'>
+          <h1 className='mt-1 text-sm  sm:text-2xl font-bold text-gray-200 '>
             <TypeAnimation
               sequence={[
                 ' Frontend Devoloper...',
@@ -42,14 +42,13 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className='w:full mt-5    lg:w-[30%]  flex justify-center items-center'>
+        <div className='w:full mt-5 mb-10  lg:w-[30%] lg:mt-24  flex justify-center items-center'>
           <img
             src={User}
             alt='user-img'
             className='h-[150px] w-[150px] rounded-full  hover:-translate-y-6 transition duration-500 ease-in-out lg:w-[250px] lg:h-[250px]'
           />
         </div>
-        ;
       </div>
     </div>
   );

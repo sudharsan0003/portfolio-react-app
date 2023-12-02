@@ -20,7 +20,4 @@ body {
     @apply px-4;
     @apply cursor-pointer;
   }
-  span {
-    @apply font-[FiraSans];
-  }
 }
