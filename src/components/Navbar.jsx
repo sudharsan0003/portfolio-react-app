@@ -99,13 +99,12 @@ const Navbar = () => {
       {/* rhs icon */}
       <div className='hidden sm:flex fixed flex-col top-[40%] right-0'>
         <ul>
-          <li className='w-[120px] h-[40px] flex justify-between items-center mr-[-110px] hover:ml-[-70px] duration-300 bg-blue-600'>
+          <li className='w-[120px] h-[40px] flex justify-between items-center mr-[-70px] hover:ml-[-70px] duration-300 bg-blue-600'>
             <a
-              className='flex justify-between items-center w-full text-gray-300'
+              className='flex justify-between items-center w-full  text-gray-300'
               href='/'
             >
-              <FaLinkedin size={20} />
-              Linkedin
+              <FaLinkedin size={20} /> L-in
             </a>
           </li>
           <li className='w-[120px] h-[40px] flex justify-between items-center mr-[-70px] hover:ml-[-70px] duration-300 bg-[#333333]'>
