@@ -1,18 +1,10 @@
 import React, { useState } from 'react';
-import Logo from '../assets/logo.png';
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedin,
-  FaFacebook,
-  FaLinkedinIn,
-  FaHome,
-} from 'react-icons/fa';
+import { FaBars, FaTimes, FaGithub, FaLinkedin, FaHome } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { IoMdContact } from 'react-icons/io';
 import { GoProjectRoadmap } from 'react-icons/go';
 import { FcAbout } from 'react-icons/fc';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -27,7 +19,11 @@ const Navbar = () => {
 
       {/* menu */}
       <ul className='hidden text-xl font-semibold md:flex '>
-        <li>Home</li>
+        <li>
+          <Link to='/About' spy={true} smooth={true} offset={50} duration={500}>
+            Home
+          </Link>
+        </li>
         <li>About</li>
         <li>Skills</li>
         <li>Project</li>

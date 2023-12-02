@@ -1,5 +1,4 @@
 import React from 'react';
-import { HiArrowNarrowRight } from 'react-icons/hi';
 import User from '../assets/user.jpg';
 import { TypeAnimation } from 'react-type-animation';
 
@@ -12,7 +11,8 @@ const Home = () => {
       <div className=' flex flex-col  lg:flex-row w-[90%] h-screen bg-[#0a192f]   '>
         <div className='w-[70%] mt-20  mx-auto px-8 flex flex-col justify-center h-full  '>
           <h2 className='text-2xl sm:text-5xl font-semibold text-gray-300'>
-            Hello, I'm <span>Sudharsan</span>
+            Hello, I'm <span className='text-6xl text-orange-300'>S</span>
+            udharsan
           </h2>
           <h1 className='mt-1 text-sm  sm:text-2xl font-bold text-gray-200 '>
             <TypeAnimation
