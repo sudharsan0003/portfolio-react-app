@@ -20,14 +20,36 @@ const Navbar = () => {
       {/* menu */}
       <ul className='hidden text-xl font-semibold md:flex '>
         <li>
-          <Link to='/About' spy={true} smooth={true} offset={50} duration={500}>
+          <Link to='home' spy={true} smooth={true} offset={50} duration={500}>
             Home
           </Link>
         </li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Project</li>
-        <li>Contact</li>
+        <li>
+          <Link to='about' spy={true} smooth={true} offset={50} duration={500}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to='skills' spy={true} smooth={true} offset={50} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link to='work' spy={true} smooth={true} offset={50} duration={500}>
+            Work
+          </Link>
+        </li>
+        <li>
+          <Link
+            to='contact'
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Contact
+          </Link>
+        </li>
       </ul>
 
       {/* ham */}
@@ -54,40 +76,52 @@ const Navbar = () => {
       <div className='hidden sm:flex fixed flex-col top-[40%] left-0'>
         <ul>
           <li className='w-[110px] h-[40px] flex justify-between items-center ml-[-70px] hover:ml-[-10px] duration-300 bg-blue-600 '>
-            <a
+            <Link
+              to='home'
+              smooth={true}
+              offset={50}
+              duration={500}
               className='flex justify-between items-center w-full text-gray-300'
-              href='/'
             >
               Home
               <FaHome size={20} />
-            </a>
+            </Link>
           </li>
           <li className='w-[110px] h-[40px] flex justify-between items-center ml-[-70px] hover:ml-[-10px] duration-300 bg-[#333333] '>
-            <a
+            <Link
+              to='about'
+              smooth={true}
+              offset={50}
+              duration={500}
               className='flex justify-between items-center w-full text-gray-300'
-              href='/'
             >
               About
               <FcAbout size={20} />
-            </a>
+            </Link>
           </li>
           <li className='w-[110px] h-[40px] flex justify-between items-center ml-[-70px] hover:ml-[-10px] duration-300 bg-[#6fc2b0] '>
-            <a
+            <Link
+              to='work'
+              smooth={true}
+              offset={50}
+              duration={500}
               className='flex justify-between items-center w-full text-gray-300'
-              href='/'
             >
               Project
               <GoProjectRoadmap size={20} />
-            </a>
+            </Link>
           </li>
           <li className='w-[110px] h-[40px] flex justify-between items-center ml-[-70px] hover:ml-[-10px] duration-300 bg-[#F6A48F]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300 '
-              href='/'
+            <Link
+              to='contact'
+              smooth={true}
+              offset={50}
+              duration={500}
+              className='flex justify-between items-center w-full text-gray-300'
             >
               Contact
               <IoMdContact size={20} />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -98,7 +132,7 @@ const Navbar = () => {
           <li className='w-[120px] h-[40px] flex justify-between items-center mr-[-70px] hover:ml-[-70px] duration-300 bg-blue-600'>
             <a
               className='flex justify-between items-center w-full  text-gray-300'
-              href='/'
+              href='https://www.linkedin.com/in/sudharsan-fd/'
             >
               <FaLinkedin size={20} /> L-in
             </a>
@@ -106,7 +140,7 @@ const Navbar = () => {
           <li className='w-[120px] h-[40px] flex justify-between items-center mr-[-70px] hover:ml-[-70px] duration-300 bg-[#333333]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              href='https://github.com/sudharsan0003'
             >
               <FaGithub size={20} /> Github
             </a>
@@ -114,7 +148,7 @@ const Navbar = () => {
           <li className='w-[120px] h-[40px] flex justify-between items-center mr-[-70px] hover:ml-[-70px] duration-300 bg-[#6fc2b0]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              href='https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F1%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F1%2F&ifkv=ASKXGp0u0Bnhei8VSWmWzGXOTdSTl5zUpC6fTdq8csefE0hZCgl_X0uxcAGl-t8I2HDPJmw95zDluQ&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S956958008%3A1701617301401707&theme=glif#sent'
             >
               <HiOutlineMail size={20} /> Email
             </a>

@@ -3,14 +3,14 @@ import React from 'react';
 const About = () => {
   return (
     <div name='about' className='w-full h-screen bg-[#0a192f] text-gray-300'>
-      <div className='text-center py-10'>
+      <div className='text-center py-16'>
         <p className='text-4xl  font-bold inline border-b-4 border-orange-300 '>
           About
         </p>
       </div>
       <div className='flex flex-col justify-center items-center w-full h-3/4 '>
         <div className='max-w-[1000px] w-full  grid sm:grid-cols-2 gap-8 px-4'>
-          <div className='mt-14  sm:text-right text-3xl font-semiBold'>
+          <div className='mt-1  sm:text-right text-3xl font-semiBold sm:mt-16'>
             <p>
               <h5 className='ml-5'>
                 Hi. I'm <span className='text-orange-300'>Sudharsan</span>,
@@ -23,7 +23,7 @@ const About = () => {
             </p>
           </div>
           <div>
-            <ul className='flex flex-col gap-2'>
+            <ul className='flex flex-col gap-2 mb-5 sm:mb-0'>
               <li>
                 I have completed my bachelor's degree in Sri Ramakrishna College
                 oF arts and science.
