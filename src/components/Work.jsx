@@ -40,10 +40,9 @@ const Work = () => {
   return (
     <div name='work' className='w-full h-max  text-gray-300 bg-[#0a192f]'>
       <div className='text-center bg-[#0a192f] pt-32 '>
-        <p className='text-4xl font-bold inline border-b-4 border-orange-300   '>
+        <p className='text-4xl font-bold inline border-b-4 border-orange-400   '>
           Works
         </p>
-        <p className='py-6'>// Check out some of my recent work</p>
       </div>
       <div className='max-w-[650px] mx-auto my-5 flex flex-col justify-center w-full h-full bg-[#0a192f]'>
         {project.map((item) => (

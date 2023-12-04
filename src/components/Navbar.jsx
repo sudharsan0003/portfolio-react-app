@@ -11,14 +11,14 @@ const Navbar = () => {
   const clickHandler = () => setShow(!show);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a182e] text-gray-300 '>
+    <div className='fixed w-full h-[50px] flex justify-between items-center px-4 bg-[#0a182e] text-gray-300 '>
       <div className='text-2xl'>
         <span className=''>Sudhar</span>
         <span className='text-orange-300'>san</span>
       </div>
 
       {/* menu */}
-      <ul className='hidden text-xl font-semibold md:flex '>
+      <ul className='hidden text-lg font-semibold md:flex '>
         <li>
           <Link to='home' spy={true} smooth={true} offset={50} duration={500}>
             Home
