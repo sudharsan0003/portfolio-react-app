@@ -1,6 +1,7 @@
 import React from 'react';
 import User from '../assets/user.jpg';
 import { TypeAnimation } from 'react-type-animation';
+import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
@@ -34,9 +35,11 @@ const Home = () => {
             I’m focused on building responsive full-stack web applications.
           </p>
           <div className='flex gap-10'>
-            <button className='text-white border-2 px-8 py-2 my-2 flex items-center hover:bg-orange-600 hover:orange-pink-600'>
-              <span className='animate-none lg:animate-pulse '>My Work</span>
-            </button>
+            <Link to='work' spy={true} smooth={true} offset={50} duration={500}>
+              <button className='text-white border-2 px-8 py-2 my-2 flex items-center hover:bg-orange-600 hover:orange-pink-600'>
+                <span className='animate-none lg:animate-pulse '>My Work</span>
+              </button>
+            </Link>
             <button className='text-white border-2 px-8 py-2 my-2 flex items-center hover:bg-orange-600 hover:orange-pink-600'>
               <span className='animate-none lg:animate-pulse '>Resume</span>
             </button>

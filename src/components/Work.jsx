@@ -49,18 +49,23 @@ const Work = () => {
         {project.map((item) => (
           <div
             className='shadow-md h-2/4 shadow-orange-300 group container rounded-md
-              flex  justify-center text-center items-center my-3 mx-auto w-[90%]'
+              flex flex-col justify-center text-center items-center my-3 mx-auto w-[90%]'
           >
+            <div className='text-center'>
+              <h6 className='text-center text-md font-semibold animate-pulse'>
+                {item.name}
+              </h6>
+            </div>
             <div className='w-[80%] '>
               <div className=' rounded-md flex justify-center text-center items-center mx-auto w-full  '>
                 <img
                   src={item.image}
                   alt='project-image'
-                  className='h-[200px] w-full py-3 mx-auto bg-cover bg-no-repeat bg-center'
+                  className='h-[200px] w-full duration-200 hover:scale-105 py-3 mx-auto bg-cover bg-no-repeat bg-center'
                 />
               </div>
             </div>
-            <div className='flex flex-col gap-24 justify-around px-1 ml-4'>
+            <div className='flex flex-row gap-24 justify-around py-2  w-full'>
               <a href={item.live} target='_blank'>
                 <button
                   className='text-center rounded-lg px-2 py-2 
@@ -81,7 +86,7 @@ const Work = () => {
           </div>
         ))}
       </div>
-      <div className='w-3/4 mx-auto my-16  '>
+      <div className='w-3/4 mx-auto py-6 bg-[#0a192f]  '>
         <OwlCarousel
           className='owl-theme w-full
           '
@@ -89,13 +94,18 @@ const Work = () => {
         >
           {projects.map(({ id, name, image, github, live }) => (
             <div className='w-full border  shadow-orange-300 shadow-md rounded-md'>
+              <div className='text-center'>
+                <h6 className='text-center text-sm font-light animate-pulse'>
+                  {name}
+                </h6>
+              </div>
               <img
                 src={image}
                 alt='project'
                 className='rounded-md w-3/4 duration-200 hover:scale-105 p-3'
               />
               <div className='flex items-center justify-between p-3 bg-[#0a192f]'>
-                <a href={live} target='_blank'>
+                <a href={live}>
                   <button
                     className='text-center rounded-lg px-2 py-2 
                   bg-white text-gray-700 duration-200 hover:scale-150 p-3 hover:bg-transparent'
@@ -103,7 +113,7 @@ const Work = () => {
                     <FaExternalLinkAlt size={10} />
                   </button>
                 </a>
-                <a href={github} target='_blank'>
+                <a href={github}>
                   <button
                     className='text-center rounded-lg px-2 py-2 
                   bg-white text-gray-700 duration-200 hover:scale-150 p-3 hover:bg-transparent'

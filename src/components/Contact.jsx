@@ -1,10 +1,11 @@
 import React from 'react';
+import { SiMinutemailer } from 'react-icons/si';
 
 const Contact = () => {
   return (
     <div
       name='contact'
-      className='w-full h-max pt-[22rem] bg-[#0a192f] flex justify-center items-center p-4'
+      className='w-full h-max  bg-[#0a192f] flex justify-center items-center p-4'
     >
       <form
         method='POST'
@@ -34,8 +35,8 @@ const Contact = () => {
           rows='10'
           placeholder='Message'
         ></textarea>
-        <button className='text-white border-2 hover:bg-orange-500 hover:border-orange-500 px-4 py-3 my-8 mx-auto flex items-center'>
-          Let's Collaborate
+        <button className='text-white border-2 hover:bg-orange-500 hover:border-orange-500 px-4 py-1 my-8 mx-auto flex items-center'>
+          Let's <SiMinutemailer className='ml-6' />
         </button>
       </form>
     </div>
