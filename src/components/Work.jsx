@@ -88,7 +88,7 @@ const Work = () => {
       </div>
       <div className='w-3/4 mx-auto py-6 bg-[#0a192f]  '>
         <OwlCarousel
-          className='owl-theme w-full
+          className='owl-theme w-full px-3
           '
           {...options}
         >
