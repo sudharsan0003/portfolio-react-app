@@ -14,7 +14,7 @@ export const reactData = [
     id: 2,
     name: 'Blog Application',
     image: blog,
-    github: 'https://github.com/sudharsan0003/blog-website#available-scripts',
+    github: 'https://github.com/sudharsan0003/blog-web',
     live: 'https://glittering-pixie-e6b924.netlify.app/',
   },
   {
