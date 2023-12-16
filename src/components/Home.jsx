@@ -41,7 +41,7 @@ const Home = () => {
                 spy={true}
                 smooth={true}
                 offset={50}
-                duration={500}
+                duration={1500}
               >
                 <button className='text-white border-2 px-8 py-2 my-2 flex items-center hover:bg-orange-600 hover:orange-pink-600'>
                   <span className='animate-none lg:animate-pulse '>
@@ -50,7 +50,11 @@ const Home = () => {
                 </button>
               </Link>
               <button className='text-white border-2 px-8 py-2 my-2 flex items-center hover:bg-orange-600 hover:orange-pink-600'>
-                <span className='animate-none lg:animate-pulse '>Resume</span>
+                <span className='animate-none lg:animate-pulse '>
+                  <a href='https://drive.google.com/file/d/1O9JsSCt29I0-vsdNYem-boG_kEcH0mOF/view'>
+                    Resume
+                  </a>
+                </span>
               </button>
             </div>
           </div>
