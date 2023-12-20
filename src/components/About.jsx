@@ -16,7 +16,7 @@ const About = () => {
                 Hi. I'm <span className='text-orange-300'>Sudharsan</span>,
               </h5>
               <p className='sm:text-right text-xl font-light ml-5'>
-                I'm a passionate web developer with create interactive and
+                I'm a passionate web developer who creates interactive and
                 responsive websites. Currently specializing in front-end
                 technologies.
               </p>
@@ -25,22 +25,22 @@ const About = () => {
           <div className=''>
             <ul className='flex flex-col gap-2 mb-5 sm:mb-0 '>
               <li>
-                I have completed my bachelor's degree in Sri Ramakrishna College
+                I have completed my bachelor's degree at Sri Ramakrishna College
                 oF arts and science.
               </li>
               <li>
                 {' '}
-                Following my undergraduate studies, I pursued a Full Stack
-                Developer course in Skill Safari Academy, where I specialized in
-                Frontend Developer . My thesis focused on developing a
+                Following my undergraduate studies, I pursued a Full-Stack
+                Developer course in Skill Safari Academy, where I specialised as
+                a Frontend Developer . My thesis focused on developing
                 interactive websites.
               </li>
               <li>
-                Explore my portfolio to see some of my latest projects. The
+                Explore my portfolio to see some of my latest projects.With the
                 skills and knowledge I gained during my academic journey, I'm
                 enthusiastic about the opportunity to bring my academic
-                background and practical experience to contribute to the
-                innovative projects.
+                background and practical experience to contribute to innovative
+                projects.
               </li>
             </ul>
           </div>
